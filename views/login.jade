@@ -1,0 +1,14 @@
+extends ./layout.jade
+block Contenido
+	form(action="/users" method="POST")
+		div
+			label(for="nombre") Nombre
+			input(type="text", name="nombre", placeholder="Nombre", id="nombre")
+
+		div
+			label(for="email") Correo
+			input(type="text", name="email", placeholder="Email", id="email")
+
+		div
+			label(for="password") Contraseña
+			input(type="password", name="password", placeholder="Password", id="password")
