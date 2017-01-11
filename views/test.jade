@@ -1,0 +1,9 @@
+extends layout
+block Contenido
+	// local variables - shortcuts
+	-var login = appData.content.test
+	-var utils = appData.content.utils
+
+	p #{ user.nombre } #[br]
+	p #{ user.email } #[br]
+	p #{ user.password }

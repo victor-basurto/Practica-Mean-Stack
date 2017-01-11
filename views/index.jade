@@ -1,4 +1,9 @@
-extends ./layout.jade
+extends layout
 block Contenido
-	h1 Programacion Facil
-	p #[a(href="/views/login") Iniciar Sesion]
+	// local variables - shortcuts
+	-var index = appData.content.index
+	-var utils = appData.content.utils
+
+	h1#init-title #{ index.intro }
+	
+	a.btn.btn-success(href="/login") #{ utils.initSes }

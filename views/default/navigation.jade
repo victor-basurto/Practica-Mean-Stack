@@ -1,0 +1,10 @@
+// aqui vas a poner tu navegacion
+// ejemplo
+nav.navbar.navbar-default.navbar-fixed-top
+	.container
+		.navbar-header
+			a.navbar-brand(href="/") #{ appData.appName }
+		ul.nav.navbar-nav
+			for nav in appData.navigationMenu.urls
+				li(class=(title == '#{ nav.name }' ? 'active' : ''))
+					a(href="#{nav.link}") #{ nav.name }

@@ -1,14 +1,20 @@
-extends ./layout.jade
+extends layout
 block Contenido
+	// local variables - shortcuts
+	-var login = appData.content.login
+	-var utils = appData.content.utils
+
 	form(action="/users" method="POST")
-		div
-			label(for="nombre") Nombre
-			input(type="text", name="nombre", placeholder="Nombre", id="nombre")
+		.form-group
+			label(for="nombre") #{ utils.name }
+			input.form-control(type="text", name="nombre", placeholder="Nombre", id="nombre")
 
-		div
-			label(for="email") Correo
-			input(type="text", name="email", placeholder="Email", id="email")
+		.form-group
+			label(for="email") #{ utils.email }
+			input.form-control(type="text", name="email", placeholder="Email", id="email")
 
-		div
-			label(for="password") Contraseña
-			input(type="password", name="password", placeholder="Password", id="password")
+		.form-group
+			label(for="password") #{ utils.pass }
+			input.form-control(type="password", name="password", placeholder="Password", id="password")
+
+		input.btn.btn-default.btn-lg( type="submit", value="#{ utils.login }" )

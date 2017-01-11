@@ -32,9 +32,8 @@ app/assets/libs/
 *.css-map
 build/
 dist/
-oldconfig.txt
 .env
 
 # Extra Data #
 ######################
-app/views/home/data.json
+#app/views/home/data.json

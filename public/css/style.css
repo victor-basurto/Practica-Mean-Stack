@@ -1,0 +1,13 @@
+body {
+	background: #eaeaea;
+	font: Helvetica; 
+}
+
+main {
+	margin-top: 60px;
+}
+
+form {
+	width: 800px;
+	margin: 0 auto 100px auto;
+}

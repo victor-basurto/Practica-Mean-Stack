@@ -1,0 +1,38 @@
+{
+	"appName": "Mean-Stack",
+	"navigationMenu": {
+		"urls": [{
+			"link": "/",
+			"name": "Home"
+		}, {
+			"link": "/login",
+			"name": "Login"
+		}]
+	},
+
+	"content": {
+		"index": {
+			"intro": "Programacion Facil"
+		},
+
+		"login": {
+			"intro": "Espacio en blanco, listo para ser usado"
+		},
+
+		"test": {
+			"intro": "Espacio en blanco, listo para ser usado"
+		},
+
+		"utils": {
+			"email": "Correo",
+			"home": "Home",
+			"initSes": "Iniciar Sesion",
+			"login": "Login",
+			"name": "Nombre",
+			"pass": "Contraseña",
+			"submit": "Submit",
+			"test": "Test"
+		}
+	}
+
+}
